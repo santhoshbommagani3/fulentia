@@ -1,22 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Pronunciation App</title>
+    <title>English Learning App</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
 
-<div id="difficulty-screen">
-    <h1>Choose Difficulty</h1>
-    <button class="level-btn" data-level="beginner">Beginner</button>
-    <button class="level-btn" data-level="intermediate">Intermediate</button>
-    <button class="level-btn" data-level="advanced">Advanced</button>
+
+
+<div id="mode-screen" class="screen">
+
+    <h1>Choose Practice Mode</h1>
+
+    <div class="mode-container">
+
+        <div id="mode-vocab" class="mode-card">
+            <img src="{{ url_for('static', filename='vocab.jpg') }}" alt="Vocabulary Builder">
+            <p>Vocabulary Builder</p>
+        </div>
+
+        <div id="mode-pronunciation" class="mode-card">
+            <img src="{{ url_for('static', filename='pronunciation.jpg') }}" alt="Pronunciation Practice">
+            <p>Pronunciation Practice</p>
+        </div>
+
+        <div id="mode-grammar" class="mode-card">
+            <img src="{{ url_for('static', filename='grammar.jpg') }}" alt="Grammar Practice">
+            <p>Grammar Practice</p>
+        </div>
+
+    </div>
 </div>
 
-<div id="session-screen" class="hidden">
+
+<div id="difficulty-screen" class="screen hidden">
+    <h1>Select Difficulty</h1>
+
+    <div class="button-group">
+        <button class="level-btn" data-level="beginner">Beginner</button>
+        <button class="level-btn" data-level="intermediate">Intermediate</button>
+        <button class="level-btn" data-level="advanced">Advanced</button>
+    </div>
+</div>
+
+
+<div id="session-screen" class="screen hidden">
+
     <div id="progress"></div>
+
     <div id="sentence-box"></div>
+    <div id="sentence-phonetic"></div>
+
+    <button id="listen-btn">🔊 Listen</button>
 
     <div id="controls">
         <button id="record-btn">🎙️ Record</button>
@@ -25,11 +63,17 @@
 
     <div id="feedback"></div>
 
+    <div id="playback-compare" hidden>
+        <button id="play-user">▶ Your pronunciation</button>
+        <button id="play-correct">▶ Correct pronunciation</button>
+    </div>
+
     <button id="next-btn" class="hidden">Next ➜</button>
 </div>
 
-<div id="summary-screen" class="hidden">
+<div id="summary-screen" class="screen hidden">
     <h2>Session Summary</h2>
+
     <p id="sum-correct"></p>
     <p id="sum-wrong"></p>
     <p id="sum-missing"></p>
@@ -38,6 +82,71 @@
     <button onclick="location.reload()">Restart</button>
 </div>
 
+<div id="grammar-setup" class="screen hidden">
+    <h2>Grammar Practice</h2>
+    <p>Select number of questions</p>
+
+    <div class="button-group">
+        <button class="g-count" data-count="5">5</button>
+        <button class="g-count" data-count="10">10</button>
+        <button class="g-count" data-count="15">15</button>
+    </div>
+
+    <button id="start-grammar">Start</button>
+</div>
+
+<div id="grammar-session" class="screen hidden">
+    <div id="grammar-progress"></div>
+    <div id="grammar-question"></div>
+    <div id="grammar-options"></div>
+    <div id="grammar-feedback"></div>
+</div>
+
+<div id="grammar-summary" class="screen hidden">
+    <h2>Grammar Summary</h2>
+    <p id="grammar-score"></p>
+    <button onclick="location.reload()">Restart</button>
+</div>
+
+<div id="vocab-screen" class="screen hidden">
+
+    <h2 class="vocab-title">Vocabulary Builder</h2>
+
+    <div class="vocab-card" id="vocab-card">
+  <div class="vocab-inner">
+
+    <div class="vocab-front">
+  <div class="vocab-word" id="vocab-word">word</div>
+
+  <button id="play-audio" class="audio-btn">
+    🔊 Pronunciation
+  </button>
+
+  <p class="hint">Tap card to see meaning</p>
+
+  <div class="vocab-actions">
+    <button id="vocab-next-front">Next →</button>
+    <button id="vocab-exit-front">Exit</button>
+  </div>
+</div>
+
+
+    <div class="vocab-back">
+      <div class="vocab-meaning" id="vocab-meaning"></div>
+      <div class="vocab-example" id="vocab-example"></div>
+
+      <div class="vocab-actions">
+        <button id="vocab-next">Next →</button>
+        <button id="vocab-exit">Exit</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</div>
+
 <script src="{{ url_for('static', filename='script.js') }}"></script>
+
 </body>
 </html>

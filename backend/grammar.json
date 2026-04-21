@@ -1,0 +1,1020 @@
+[
+  {
+    "id": 1,
+    "level": "A1",
+    "category": "Present Simple",
+    "source": "CEFR / British Council",
+    "sentence": "She ___ to school every day.",
+    "options": ["go", "goes", "going", "gone"],
+    "answer": "goes",
+    "rule": "Third person singular verbs take -s"
+  },
+  {
+    "id": 2,
+    "level": "A1",
+    "category": "Verb To Be",
+    "source": "CEFR",
+    "sentence": "They ___ very happy today.",
+    "options": ["is", "are", "was", "be"],
+    "answer": "are",
+    "rule": "Plural subjects use 'are'"
+  },
+  {
+    "id": 3,
+    "level": "A1",
+    "category": "Articles",
+    "source": "British Council",
+    "sentence": "She is ___ honest person.",
+    "options": ["a", "an", "the", "no article"],
+    "answer": "an",
+    "rule": "Use 'an' before vowel sounds"
+  },
+  {
+    "id": 4,
+    "level": "A1",
+    "category": "There is / There are",
+    "source": "CEFR",
+    "sentence": "There ___ many students in the class.",
+    "options": ["is", "are", "was", "be"],
+    "answer": "are",
+    "rule": "Plural nouns use 'there are'"
+  },
+  {
+    "id": 5,
+    "level": "A1",
+    "category": "Prepositions",
+    "source": "British Council",
+    "sentence": "The book is ___ the table.",
+    "options": ["on", "in", "at", "by"],
+    "answer": "on",
+    "rule": "Use 'on' for surfaces"
+  },
+
+  {
+    "id": 6,
+    "level": "A1",
+    "category": "Present Continuous",
+    "source": "CEFR",
+    "sentence": "They ___ watching TV now.",
+    "options": ["is", "are", "was", "be"],
+    "answer": "are",
+    "rule": "Present continuous uses am/is/are"
+  },
+  {
+    "id": 7,
+    "level": "A1",
+    "category": "Countable Nouns",
+    "source": "CEFR",
+    "sentence": "She has ___ apples.",
+    "options": ["much", "many", "little", "less"],
+    "answer": "many",
+    "rule": "Many is used with countable nouns"
+  },
+  {
+    "id": 8,
+    "level": "A1",
+    "category": "Possessive Adjectives",
+    "source": "British Council",
+    "sentence": "This is ___ bag.",
+    "options": ["me", "mine", "my", "I"],
+    "answer": "my",
+    "rule": "Possessive adjectives come before nouns"
+  },
+  {
+    "id": 9,
+    "level": "A1",
+    "category": "Simple Questions",
+    "source": "CEFR",
+    "sentence": "___ you like coffee?",
+    "options": ["Do", "Does", "Did", "Are"],
+    "answer": "Do",
+    "rule": "Use 'do' with I/you/we/they"
+  },
+  {
+    "id": 10,
+    "level": "A1",
+    "category": "Adverbs of Frequency",
+    "source": "British Council",
+    "sentence": "She ___ gets up early.",
+    "options": ["always", "already", "soon", "now"],
+    "answer": "always",
+    "rule": "Adverbs of frequency describe how often"
+  },
+
+  {
+    "id": 11,
+    "level": "A2",
+    "category": "Past Simple",
+    "source": "CEFR",
+    "sentence": "He ___ an apple yesterday.",
+    "options": ["eat", "ate", "eaten", "eats"],
+    "answer": "ate",
+    "rule": "Irregular verbs change form in past simple"
+  },
+  {
+    "id": 12,
+    "level": "A2",
+    "category": "Past Continuous",
+    "source": "British Council",
+    "sentence": "She ___ studying when I called.",
+    "options": ["is", "was", "were", "be"],
+    "answer": "was",
+    "rule": "Past continuous uses was/were + ing"
+  },
+  {
+    "id": 13,
+    "level": "A2",
+    "category": "Comparatives",
+    "source": "CEFR",
+    "sentence": "This bag is ___ than that one.",
+    "options": ["cheap", "cheaper", "cheapest", "more cheap"],
+    "answer": "cheaper",
+    "rule": "Short adjectives take -er"
+  },
+  {
+    "id": 14,
+    "level": "A2",
+    "category": "Superlatives",
+    "source": "British Council",
+    "sentence": "This is the ___ place in town.",
+    "options": ["good", "better", "best", "most good"],
+    "answer": "best",
+    "rule": "Superlatives use 'the + adjective-est'"
+  },
+  {
+    "id": 15,
+    "level": "A2",
+    "category": "Modal Verbs",
+    "source": "CEFR",
+    "sentence": "You ___ wear a helmet.",
+    "options": ["can", "must", "may", "would"],
+    "answer": "must",
+    "rule": "Must expresses obligation"
+  },
+
+  {
+    "id": 16,
+    "level": "A2",
+    "category": "Prepositions of Time",
+    "source": "British Council",
+    "sentence": "We will meet ___ Monday.",
+    "options": ["in", "on", "at", "by"],
+    "answer": "on",
+    "rule": "Use 'on' with days"
+  },
+  {
+    "id": 17,
+    "level": "A2",
+    "category": "Some / Any",
+    "source": "CEFR",
+    "sentence": "There isn’t ___ milk left.",
+    "options": ["some", "any", "many", "few"],
+    "answer": "any",
+    "rule": "Any is used in negative sentences"
+  },
+  {
+    "id": 18,
+    "level": "A2",
+    "category": "Phrasal Verbs",
+    "source": "British Council",
+    "sentence": "He is looking ___ his keys.",
+    "options": ["at", "for", "to", "on"],
+    "answer": "for",
+    "rule": "Look for means try to find"
+  },
+  {
+    "id": 19,
+    "level": "A2",
+    "category": "Adverbs",
+    "source": "CEFR",
+    "sentence": "She speaks English ___.",
+    "options": ["good", "well", "better", "best"],
+    "answer": "well",
+    "rule": "Adverbs describe verbs"
+  },
+  {
+    "id": 20,
+    "level": "A2",
+    "category": "Conjunctions",
+    "source": "British Council",
+    "sentence": "She was tired ___ she kept working.",
+    "options": ["but", "so", "and", "because"],
+    "answer": "but",
+    "rule": "But shows contrast"
+  },
+
+  {
+    "id": 21,
+    "level": "B1",
+    "category": "Present Perfect",
+    "source": "Cambridge Grammar Profile",
+    "sentence": "I have ___ my homework already.",
+    "options": ["do", "did", "done", "doing"],
+    "answer": "done",
+    "rule": "Have/has + past participle"
+  },
+  {
+    "id": 22,
+    "level": "B1",
+    "category": "For vs Since",
+    "source": "CEFR",
+    "sentence": "He has lived here ___ five years.",
+    "options": ["since", "for", "from", "during"],
+    "answer": "for",
+    "rule": "For is used with periods of time"
+  },
+  {
+    "id": 23,
+    "level": "B1",
+    "category": "Conditionals",
+    "source": "British Council",
+    "sentence": "If it rains, we ___ stay home.",
+    "options": ["would", "will", "might", "should"],
+    "answer": "will",
+    "rule": "First conditional uses present + will"
+  },
+  {
+    "id": 24,
+    "level": "B1",
+    "category": "Passive Voice",
+    "source": "CEFR",
+    "sentence": "The book was written ___ him.",
+    "options": ["by", "with", "from", "to"],
+    "answer": "by",
+    "rule": "By shows the agent in passive voice"
+  },
+  {
+    "id": 25,
+    "level": "B1",
+    "category": "Reported Speech",
+    "source": "Cambridge",
+    "sentence": "He asked me ___ I was ready.",
+    "options": ["if", "that", "what", "when"],
+    "answer": "if",
+    "rule": "Reported yes/no questions use 'if'"
+  },
+
+  {
+    "id": 26,
+    "level": "B1",
+    "category": "Gerunds",
+    "source": "British Council",
+    "sentence": "She enjoys ___ music.",
+    "options": ["listen", "listening", "to listen", "listened"],
+    "answer": "listening",
+    "rule": "Enjoy is followed by a gerund"
+  },
+  {
+    "id": 27,
+    "level": "B1",
+    "category": "Infinitives",
+    "source": "CEFR",
+    "sentence": "I decided ___ early.",
+    "options": ["leave", "to leave", "leaving", "left"],
+    "answer": "to leave",
+    "rule": "Decide is followed by an infinitive"
+  },
+  {
+    "id": 28,
+    "level": "B1",
+    "category": "Adjective + Preposition",
+    "source": "British Council",
+    "sentence": "She is afraid ___ dogs.",
+    "options": ["from", "of", "with", "at"],
+    "answer": "of",
+    "rule": "Afraid is followed by 'of'"
+  },
+  {
+    "id": 29,
+    "level": "B1",
+    "category": "Quantifiers",
+    "source": "CEFR",
+    "sentence": "There are ___ people waiting.",
+    "options": ["much", "many", "little", "less"],
+    "answer": "many",
+    "rule": "Many is used with countable nouns"
+  },
+  {
+    "id": 30,
+    "level": "B1",
+    "category": "Prepositions of Movement",
+    "source": "British Council",
+    "sentence": "He ran ___ the street.",
+    "options": ["across", "into", "on", "by"],
+    "answer": "across",
+    "rule": "Across means from one side to another"
+  },
+
+  {
+    "id": 31,
+    "level": "B1",
+    "category": "Adverbs of Degree",
+    "source": "CEFR",
+    "sentence": "The test was ___ difficult.",
+    "options": ["very", "too", "enough", "so"],
+    "answer": "too",
+    "rule": "Too means more than necessary"
+  },
+  {
+    "id": 32,
+    "level": "B1",
+    "category": "Present Perfect",
+    "source": "Cambridge",
+    "sentence": "She has ___ been abroad.",
+    "options": ["never", "ever", "just", "already"],
+    "answer": "never",
+    "rule": "Never is used with present perfect"
+  },
+  {
+    "id": 33,
+    "level": "B1",
+    "category": "Cause and Effect",
+    "source": "British Council",
+    "sentence": "He was late ___ the rain.",
+    "options": ["because", "because of", "so", "since"],
+    "answer": "because of",
+    "rule": "Because of is followed by a noun"
+  },
+  {
+    "id": 34,
+    "level": "B1",
+    "category": "Verb Patterns",
+    "source": "CEFR",
+    "sentence": "I forgot ___ him.",
+    "options": ["call", "calling", "to call", "called"],
+    "answer": "to call",
+    "rule": "Forget can be followed by infinitive"
+  },
+  {
+    "id": 35,
+    "level": "B1",
+    "category": "Adverb Comparison",
+    "source": "British Council",
+    "sentence": "She speaks ___ than before.",
+    "options": ["confident", "more confidently", "most confident", "confidence"],
+    "answer": "more confidently",
+    "rule": "Adverbs form comparatives with more"
+  },
+
+  {
+    "id": 36,
+    "level": "B1",
+    "category": "Negative Forms",
+    "source": "CEFR",
+    "sentence": "She didn’t ___ the message.",
+    "options": ["received", "receive", "receives", "receiving"],
+    "answer": "receive",
+    "rule": "Base verb follows did not"
+  },
+  {
+    "id": 37,
+    "level": "B1",
+    "category": "Prepositions",
+    "source": "British Council",
+    "sentence": "The train arrived ___ time.",
+    "options": ["in", "on", "at", "by"],
+    "answer": "on",
+    "rule": "On time means punctual"
+  },
+  {
+    "id": 38,
+    "level": "B1",
+    "category": "Adjective + Preposition",
+    "source": "CEFR",
+    "sentence": "He is interested ___ science.",
+    "options": ["at", "on", "in", "for"],
+    "answer": "in",
+    "rule": "Interested is followed by 'in'"
+  },
+  {
+    "id": 39,
+    "level": "B1",
+    "category": "Past Participles",
+    "source": "Cambridge",
+    "sentence": "She has ___ her keys.",
+    "options": ["lose", "lost", "losing", "loses"],
+    "answer": "lost",
+    "rule": "Past participle of lose is lost"
+  },
+  {
+    "id": 40,
+    "level": "B1",
+    "category": "Past Continuous",
+    "source": "British Council",
+    "sentence": "They ___ watching TV when I arrived.",
+    "options": ["are", "were", "was", "be"],
+    "answer": "were",
+    "rule": "Plural subjects use were"
+  },
+
+  {
+    "id": 41,
+    "level": "B1",
+    "category": "Infinitives",
+    "source": "CEFR",
+    "sentence": "I was happy ___ the news.",
+    "options": ["hear", "to hear", "hearing", "heard"],
+    "answer": "to hear",
+    "rule": "Adjectives are followed by infinitives"
+  },
+  {
+    "id": 42,
+    "level": "B1",
+    "category": "Prepositions of Place",
+    "source": "British Council",
+    "sentence": "They arrived ___ the airport early.",
+    "options": ["in", "on", "at", "to"],
+    "answer": "at",
+    "rule": "Arrive at is used for specific places"
+  },
+  {
+    "id": 43,
+    "level": "B1",
+    "category": "Superlatives",
+    "source": "CEFR",
+    "sentence": "This is the ___ book I have read.",
+    "options": ["interesting", "more interesting", "most interesting", "interest"],
+    "answer": "most interesting",
+    "rule": "Long adjectives use most for superlative"
+  },
+  {
+    "id": 44,
+    "level": "B1",
+    "category": "Modal Verbs",
+    "source": "British Council",
+    "sentence": "He ___ be late today.",
+    "options": ["must", "might", "should", "will"],
+    "answer": "might",
+    "rule": "Might expresses possibility"
+  },
+  {
+    "id": 45,
+    "level": "B1",
+    "category": "Verb + Preposition",
+    "source": "CEFR",
+    "sentence": "She apologized ___ being late.",
+    "options": ["for", "to", "about", "with"],
+    "answer": "for",
+    "rule": "Apologize is followed by for"
+  },
+
+  {
+    "id": 46,
+    "level": "B1",
+    "category": "Adverbs",
+    "source": "British Council",
+    "sentence": "She speaks English ___.",
+    "options": ["clear", "clearly", "clearest", "clarity"],
+    "answer": "clearly",
+    "rule": "Adverbs describe how actions are done"
+  },
+  {
+    "id": 47,
+    "level": "B1",
+    "category": "Quantifiers",
+    "source": "CEFR",
+    "sentence": "There isn’t ___ sugar left.",
+    "options": ["many", "much", "few", "little"],
+    "answer": "much",
+    "rule": "Much is used with uncountable nouns"
+  },
+  {
+    "id": 48,
+    "level": "B1",
+    "category": "Verb To Be",
+    "source": "British Council",
+    "sentence": "She ___ studying medicine.",
+    "options": ["is", "are", "was", "be"],
+    "answer": "is",
+    "rule": "Singular subjects use is"
+  },
+  {
+    "id": 49,
+    "level": "B1",
+    "category": "Adverbs of Time",
+    "source": "CEFR",
+    "sentence": "The baby is sleeping ___.",
+    "options": ["now", "soon", "then", "yet"],
+    "answer": "now",
+    "rule": "Now indicates present time"
+  },
+  {
+    "id": 50,
+    "level": "B1",
+    "category": "Past Perfect",
+    "source": "Cambridge",
+    "sentence": "We had ___ finished when he arrived.",
+    "options": ["already", "just", "yet", "still"],
+    "answer": "already",
+    "rule": "Past perfect uses had + past participle"
+  },
+  {
+    "id": 51,
+    "level": "B1",
+    "category": "Present Perfect",
+    "source": "Cambridge Grammar Profile",
+    "sentence": "She has ___ her work already.",
+    "options": ["finish", "finished", "finishing", "finishes"],
+    "answer": "finished",
+    "rule": "Present perfect uses have/has + past participle"
+  },
+  {
+    "id": 52,
+    "level": "B1",
+    "category": "For vs Since",
+    "source": "CEFR",
+    "sentence": "He has lived here ___ 2018.",
+    "options": ["for", "since", "during", "from"],
+    "answer": "since",
+    "rule": "Since is used with a specific point in time"
+  },
+  {
+    "id": 53,
+    "level": "B1",
+    "category": "Zero Conditional",
+    "source": "British Council",
+    "sentence": "If you heat ice, it ___.",
+    "options": ["melts", "will melt", "melted", "is melting"],
+    "answer": "melts",
+    "rule": "Zero conditional uses present simple in both clauses"
+  },
+  {
+    "id": 54,
+    "level": "B1",
+    "category": "Passive Voice",
+    "source": "CEFR",
+    "sentence": "The room is ___ every day.",
+    "options": ["clean", "cleaned", "cleaning", "cleans"],
+    "answer": "cleaned",
+    "rule": "Passive voice uses be + past participle"
+  },
+  {
+    "id": 55,
+    "level": "B1",
+    "category": "Modal Verbs",
+    "source": "British Council",
+    "sentence": "You ___ park here. It’s forbidden.",
+    "options": ["must", "mustn’t", "can", "should"],
+    "answer": "mustn’t",
+    "rule": "Must not expresses prohibition"
+  },
+
+  {
+    "id": 56,
+    "level": "B1",
+    "category": "Gerunds vs Infinitives",
+    "source": "Cambridge Grammar Profile",
+    "sentence": "She decided ___ early.",
+    "options": ["leave", "to leave", "leaving", "left"],
+    "answer": "to leave",
+    "rule": "Decide is followed by an infinitive"
+  },
+  {
+    "id": 57,
+    "level": "B1",
+    "category": "Relative Pronouns",
+    "source": "CEFR",
+    "sentence": "This is the person ___ helped me.",
+    "options": ["which", "who", "where", "whose"],
+    "answer": "who",
+    "rule": "Who is used for people"
+  },
+  {
+    "id": 58,
+    "level": "B1",
+    "category": "Reported Speech",
+    "source": "British Council",
+    "sentence": "She said that she ___ tired.",
+    "options": ["is", "was", "were", "be"],
+    "answer": "was",
+    "rule": "Reported speech shifts present to past"
+  },
+  {
+    "id": 59,
+    "level": "B1",
+    "category": "Adjective Order",
+    "source": "CEFR",
+    "sentence": "She bought a ___ dress.",
+    "options": ["red beautiful", "beautiful red", "redly beautiful", "beauty red"],
+    "answer": "beautiful red",
+    "rule": "Opinion comes before colour"
+  },
+  {
+    "id": 60,
+    "level": "B1",
+    "category": "Comparative Structures",
+    "source": "British Council",
+    "sentence": "The more you practice, the ___ you become.",
+    "options": ["good", "better", "best", "well"],
+    "answer": "better",
+    "rule": "Comparative structures use comparative forms"
+  },
+
+  {
+    "id": 61,
+    "level": "B1",
+    "category": "Modal Verbs of Advice",
+    "source": "CEFR",
+    "sentence": "You ___ see a doctor.",
+    "options": ["must", "should", "might", "can"],
+    "answer": "should",
+    "rule": "Should is used for advice"
+  },
+  {
+    "id": 62,
+    "level": "B1",
+    "category": "Adverbs of Manner",
+    "source": "British Council",
+    "sentence": "He answered the question ___.",
+    "options": ["correct", "correctly", "correctness", "correcting"],
+    "answer": "correctly",
+    "rule": "Adverbs describe how an action is done"
+  },
+  {
+    "id": 63,
+    "level": "B1",
+    "category": "Countable vs Uncountable",
+    "source": "CEFR",
+    "sentence": "There isn’t much ___ left.",
+    "options": ["apples", "books", "water", "chairs"],
+    "answer": "water",
+    "rule": "Much is used with uncountable nouns"
+  },
+  {
+    "id": 64,
+    "level": "B1",
+    "category": "Past Perfect",
+    "source": "Cambridge Grammar Profile",
+    "sentence": "She had ___ left before I arrived.",
+    "options": ["already", "yet", "still", "now"],
+    "answer": "already",
+    "rule": "Past perfect uses had + past participle"
+  },
+  {
+    "id": 65,
+    "level": "B1",
+    "category": "Verb + Preposition",
+    "source": "British Council",
+    "sentence": "He apologized ___ the mistake.",
+    "options": ["to", "for", "about", "with"],
+    "answer": "for",
+    "rule": "Apologize is followed by for"
+  },
+
+  {
+    "id": 66,
+    "level": "B1",
+    "category": "Conditionals",
+    "source": "CEFR",
+    "sentence": "If I ___ more time, I would help you.",
+    "options": ["have", "had", "will have", "has"],
+    "answer": "had",
+    "rule": "Second conditional uses past simple"
+  },
+  {
+    "id": 67,
+    "level": "B1",
+    "category": "Passive Voice",
+    "source": "British Council",
+    "sentence": "The emails have been ___ already.",
+    "options": ["send", "sent", "sending", "sends"],
+    "answer": "sent",
+    "rule": "Passive present perfect uses have been + past participle"
+  },
+  {
+    "id": 68,
+    "level": "B1",
+    "category": "Question Tags",
+    "source": "CEFR",
+    "sentence": "You like coffee, ___?",
+    "options": ["don’t you", "do you", "aren’t you", "did you"],
+    "answer": "don’t you",
+    "rule": "Positive statements take negative tags"
+  },
+  {
+    "id": 69,
+    "level": "B1",
+    "category": "Prepositions",
+    "source": "British Council",
+    "sentence": "She is responsible ___ the project.",
+    "options": ["to", "for", "with", "on"],
+    "answer": "for",
+    "rule": "Responsible is followed by for"
+  },
+  {
+    "id": 70,
+    "level": "B1",
+    "category": "Adverbs of Frequency",
+    "source": "CEFR",
+    "sentence": "He ___ forgets his keys.",
+    "options": ["often", "already", "now", "soon"],
+    "answer": "often",
+    "rule": "Adverbs of frequency show how often"
+  },
+
+  {
+    "id": 71,
+    "level": "B1",
+    "category": "Infinitives",
+    "source": "British Council",
+    "sentence": "She was happy ___ the result.",
+    "options": ["see", "to see", "seeing", "saw"],
+    "answer": "to see",
+    "rule": "Adjectives are followed by infinitives"
+  },
+  {
+    "id": 72,
+    "level": "B1",
+    "category": "Relative Clauses",
+    "source": "CEFR",
+    "sentence": "This is the house ___ I grew up.",
+    "options": ["which", "where", "who", "what"],
+    "answer": "where",
+    "rule": "Where is used for places"
+  },
+  {
+    "id": 73,
+    "level": "B1",
+    "category": "Linking Words",
+    "source": "British Council",
+    "sentence": "He studied hard; ___, he passed the exam.",
+    "options": ["however", "therefore", "because", "although"],
+    "answer": "therefore",
+    "rule": "Therefore shows result"
+  },
+  {
+    "id": 74,
+    "level": "B1",
+    "category": "Determiners",
+    "source": "CEFR",
+    "sentence": "___ students understood the lesson.",
+    "options": ["Much", "Many", "Little", "Less"],
+    "answer": "Many",
+    "rule": "Many is used with plural countable nouns"
+  },
+  {
+    "id": 75,
+    "level": "B1",
+    "category": "Modal Deduction",
+    "source": "British Council",
+    "sentence": "She ___ be at home. The lights are on.",
+    "options": ["must", "can’t", "might not", "shouldn’t"],
+    "answer": "must",
+    "rule": "Must expresses strong logical deduction"
+  },
+
+  {
+    "id": 76,
+    "level": "B1",
+    "category": "Verb Patterns",
+    "source": "CEFR",
+    "sentence": "He stopped ___ when the teacher arrived.",
+    "options": ["talk", "talking", "to talk", "talked"],
+    "answer": "talking",
+    "rule": "Stop + gerund means stop an activity"
+  },
+  {
+    "id": 77,
+    "level": "B1",
+    "category": "Comparatives",
+    "source": "British Council",
+    "sentence": "This task is ___ than the last one.",
+    "options": ["more easy", "easier", "easiest", "most easy"],
+    "answer": "easier",
+    "rule": "Short adjectives form comparatives with -er"
+  },
+  {
+    "id": 78,
+    "level": "B1",
+    "category": "Prepositions of Place",
+    "source": "CEFR",
+    "sentence": "The keys are ___ the drawer.",
+    "options": ["in", "on", "at", "by"],
+    "answer": "in",
+    "rule": "In is used for enclosed spaces"
+  },
+  {
+    "id": 79,
+    "level": "B1",
+    "category": "Verb To Be",
+    "source": "British Council",
+    "sentence": "There ___ a problem with the system.",
+    "options": ["is", "are", "were", "be"],
+    "answer": "is",
+    "rule": "Singular nouns use is"
+  },
+  {
+    "id": 80,
+    "level": "B1",
+    "category": "Past Simple vs Present Perfect",
+    "source": "CEFR",
+    "sentence": "I ___ that movie last year.",
+    "options": ["have seen", "saw", "see", "seeing"],
+    "answer": "saw",
+    "rule": "Past simple is used with finished time"
+  },
+
+  {
+    "id": 81,
+    "level": "B1",
+    "category": "Linkers",
+    "source": "British Council",
+    "sentence": "Although it was raining, we ___ outside.",
+    "options": ["stay", "stayed", "staying", "will stay"],
+    "answer": "stayed",
+    "rule": "Although introduces contrast"
+  },
+  {
+    "id": 82,
+    "level": "B1",
+    "category": "Relative Pronouns",
+    "source": "CEFR",
+    "sentence": "The book ___ you gave me is interesting.",
+    "options": ["who", "which", "where", "when"],
+    "answer": "which",
+    "rule": "Which is used for things"
+  },
+  {
+    "id": 83,
+    "level": "B1",
+    "category": "Adverbs",
+    "source": "British Council",
+    "sentence": "She answered the email ___.",
+    "options": ["quick", "quickly", "quickness", "quicker"],
+    "answer": "quickly",
+    "rule": "Adverbs describe actions"
+  },
+  {
+    "id": 84,
+    "level": "B1",
+    "category": "Modal Verbs",
+    "source": "CEFR",
+    "sentence": "You ___ bring your ID to enter.",
+    "options": ["might", "must", "could", "would"],
+    "answer": "must",
+    "rule": "Must expresses obligation"
+  },
+  {
+    "id": 85,
+    "level": "B1",
+    "category": "Comparative Structures",
+    "source": "British Council",
+    "sentence": "The harder you work, the ___ you succeed.",
+    "options": ["more", "most", "better", "best"],
+    "answer": "more",
+    "rule": "Correlative comparatives use comparative forms"
+  },
+
+  {
+    "id": 86,
+    "level": "B1",
+    "category": "Prepositions",
+    "source": "CEFR",
+    "sentence": "She is interested ___ learning languages.",
+    "options": ["to", "in", "at", "for"],
+    "answer": "in",
+    "rule": "Interested is followed by in"
+  },
+  {
+    "id": 87,
+    "level": "B1",
+    "category": "Reported Speech",
+    "source": "British Council",
+    "sentence": "He said that he ___ busy.",
+    "options": ["is", "was", "were", "be"],
+    "answer": "was",
+    "rule": "Reported speech shifts tense back"
+  },
+  {
+    "id": 88,
+    "level": "B1",
+    "category": "Verb Patterns",
+    "source": "CEFR",
+    "sentence": "I remembered ___ her yesterday.",
+    "options": ["call", "calling", "to call", "called"],
+    "answer": "calling",
+    "rule": "Remember + gerund refers to past actions"
+  },
+  {
+    "id": 89,
+    "level": "B1",
+    "category": "Passive Voice",
+    "source": "British Council",
+    "sentence": "The problem was ___ quickly.",
+    "options": ["solve", "solved", "solving", "solves"],
+    "answer": "solved",
+    "rule": "Passive voice uses past participle"
+  },
+  {
+    "id": 90,
+    "level": "B1",
+    "category": "Question Forms",
+    "source": "CEFR",
+    "sentence": "___ you ever been abroad?",
+    "options": ["Do", "Did", "Have", "Are"],
+    "answer": "Have",
+    "rule": "Present perfect questions use have/has"
+  },
+
+  {
+    "id": 91,
+    "level": "B1",
+    "category": "Determiners",
+    "source": "British Council",
+    "sentence": "She has ___ friends in the city.",
+    "options": ["much", "many", "little", "less"],
+    "answer": "many",
+    "rule": "Many is used with plural countable nouns"
+  },
+  {
+    "id": 92,
+    "level": "B1",
+    "category": "Linking Words",
+    "source": "CEFR",
+    "sentence": "He didn’t study; ___, he passed the exam.",
+    "options": ["however", "therefore", "because", "although"],
+    "answer": "however",
+    "rule": "However shows contrast"
+  },
+  {
+    "id": 93,
+    "level": "B1",
+    "category": "Prepositions of Time",
+    "source": "British Council",
+    "sentence": "The meeting starts ___ 9 a.m.",
+    "options": ["in", "on", "at", "by"],
+    "answer": "at",
+    "rule": "At is used with clock times"
+  },
+  {
+    "id": 94,
+    "level": "B1",
+    "category": "Modal Verbs",
+    "source": "CEFR",
+    "sentence": "It ___ rain later, so take an umbrella.",
+    "options": ["must", "might", "should", "will"],
+    "answer": "might",
+    "rule": "Might expresses possibility"
+  },
+  {
+    "id": 95,
+    "level": "B1",
+    "category": "Comparatives",
+    "source": "British Council",
+    "sentence": "This explanation is ___ clearer than the last one.",
+    "options": ["much", "very", "too", "so"],
+    "answer": "much",
+    "rule": "Much can intensify comparatives"
+  },
+
+  {
+    "id": 96,
+    "level": "B1",
+    "category": "Adverbs of Time",
+    "source": "CEFR",
+    "sentence": "She has ___ finished her work.",
+    "options": ["already", "yet", "still", "now"],
+    "answer": "already",
+    "rule": "Already is used in affirmative sentences"
+  },
+  {
+    "id": 97,
+    "level": "B1",
+    "category": "Verb + Preposition",
+    "source": "British Council",
+    "sentence": "He complained ___ the noise.",
+    "options": ["about", "for", "to", "with"],
+    "answer": "about",
+    "rule": "Complain is followed by about"
+  },
+  {
+    "id": 98,
+    "level": "B1",
+    "category": "Conditionals",
+    "source": "CEFR",
+    "sentence": "If she had studied, she ___ passed the exam.",
+    "options": ["will have", "would have", "has", "had"],
+    "answer": "would have",
+    "rule": "Third conditional uses would have + past participle"
+  },
+  {
+    "id": 99,
+    "level": "B1",
+    "category": "Adjective Forms",
+    "source": "British Council",
+    "sentence": "This movie is really ___.",
+    "options": ["interest", "interesting", "interested", "interestingly"],
+    "answer": "interesting",
+    "rule": "-ing adjectives describe things"
+  },
+  {
+    "id": 100,
+    "level": "B1",
+    "category": "Tense Review",
+    "source": "CEFR",
+    "sentence": "She ___ studying medicine this year.",
+    "options": ["is", "was", "has", "will"],
+    "answer": "is",
+    "rule": "Present continuous describes current activities"
+  }
+]

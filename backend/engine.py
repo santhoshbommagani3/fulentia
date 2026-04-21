@@ -1,25 +1,20 @@
 import speech_recognition as sr
-import nltk
 from nltk.corpus import cmudict
 from Levenshtein import distance
 
-# --------------------------
-# PHONEME DICTIONARY (CMU)
-# --------------------------
+
 cmu = cmudict.dict()
 
+
 def normalize_word(w):
+    """Lowercase and remove non-alphabetic characters."""
     return ''.join(ch for ch in w.lower() if ch.isalpha())
 
 
-# --------------------------
-# SPEECH TO TEXT (STABLE)
-# --------------------------
 def speech_to_text(wav_path):
     r = sr.Recognizer()
     try:
         with sr.AudioFile(wav_path) as source:
-            # attempt to clean ambient noise
             r.adjust_for_ambient_noise(source, duration=0.2)
             audio = r.record(source)
 
@@ -36,81 +31,174 @@ def speech_to_text(wav_path):
         return ""
 
 
-# --------------------------
-# REFERENCE PHONEMES
-# --------------------------
 def sentence_to_phonemes(sentence):
+    """
+    Converts reference sentence to phonemes.
+    Returns: [(word, [phonemes])]
+    """
     words = [normalize_word(w) for w in sentence.split()]
     phonemes = []
 
     for w in words:
         if w in cmu:
-            # use first pronunciation variant
             phones = cmu[w][0]
-            # remove stress digits: AH0 → AH
-            phones = [p.rstrip('0123456789') for p in phones]
+            phones = [p.rstrip("0123456789") for p in phones]
             phonemes.append((w, phones))
         else:
-            phonemes.append((w, []))  # unknown → empty phoneme
+            phonemes.append((w, []))
 
     return phonemes
 
 
-# --------------------------
-# USER PHONEMES FROM ASR TEXT
-# --------------------------
 def user_speech_to_phonemes(asr_text):
+    """
+    Converts recognized speech to phonemes.
+    Returns: [(word, [phonemes])]
+    """
     words = [normalize_word(w) for w in asr_text.split()]
     phonemes = []
 
     for w in words:
         if w in cmu:
             phones = cmu[w][0]
-            phones = [p.rstrip('0123456789') for p in phones]
+            phones = [p.rstrip("0123456789") for p in phones]
             phonemes.append((w, phones))
         else:
             phonemes.append((w, []))
+
     return phonemes
 
 
-# --------------------------
-# PHONEME PRONUNCIATION ALIGNMENT
-# --------------------------
+
+
+VOWELS = {
+    "AA", "AE", "AH", "AO", "AW", "AY",
+    "EH", "ER", "EY",
+    "IH", "IY",
+    "OW", "OY",
+    "UH", "UW"
+}
+
+PHONEME_MAP = {
+    "HH": "h", "L": "l", "S": "s", "N": "n", "D": "d", "R": "r",
+    "K": "k", "M": "m", "B": "b", "P": "p", "F": "f", "V": "v",
+    "TH": "th", "DH": "th", "SH": "sh", "CH": "ch", "JH": "j",
+    "T": "t", "G": "g", "Z": "z", "Y": "y", "W": "w",
+
+    "IY": "ee", "IH": "i",
+    "EH": "e",  "AE": "a",
+    "AH": "uh", "UH": "u",
+    "UW": "oo",
+    "AO": "aw", "AA": "ah",
+    "ER": "er",
+    "EY": "ay",
+    "OW": "oh",
+    "OY": "oy",
+    "AW": "ow"
+}
+
+
+def syllabify_with_stress(phones):
+    """
+    Splits phonemes into syllables while preserving stress.
+    Returns: [(phoneme_list, stress)]
+    """
+    syllables = []
+    current = []
+    stress = None
+
+    for p in phones:
+        if p[-1].isdigit():
+            base = p[:-1]
+            stress = int(p[-1])
+        else:
+            base = p
+
+        if base in VOWELS and current:
+            syllables.append((current, stress))
+            current = []
+            stress = None
+
+        current.append(base)
+
+    if current:
+        syllables.append((current, stress))
+
+    return syllables
+
+
+def sentence_to_phonetic(sentence):
+    """
+    Returns teacher-style respelling with syllable breaks and stress.
+    Example:
+    she ti-ed RIB-uns ah-ROUND kra-ft BUN-duhlz
+    """
+
+    output_words = []
+
+    for word in sentence.split():
+        clean = normalize_word(word)
+
+        if clean not in cmu:
+            output_words.append(clean)
+            continue
+
+        phones = cmu[clean][0]
+        syllables = syllabify_with_stress(phones)
+
+        rendered = []
+        for syl, stress in syllables:
+            text = ""
+            for p in syl:
+                text += PHONEME_MAP.get(p, "")
+
+            if stress == 1:
+                text = text.upper()
+
+            rendered.append(text)
+
+        output_words.append("-".join(rendered))
+
+    return " ".join(output_words)
+
+
+ 
 def detect_pronunciation(ref_ph, user_ph, asr_text, reference_sentence):
     """
-    ref_ph = [(word, [phonemes])]
+    Compares reference phonemes with user phonemes.
+
+    ref_ph  = [(word, [phonemes])]
     user_ph = [(word, [phonemes])]
-    return: {word -> status}
+
+    Returns:
+    {
+        word: "CORRECT" | "MISPRONOUNCED" | "NOT SPOKEN"
+    }
     """
 
     results = {}
-    ref_words = [w for w, _ in ref_ph]
-    user_words = [w for w, _ in user_ph]
 
-    for i, (ref_w, ref_p) in enumerate(ref_ph):
+    for i, (ref_word, ref_phones) in enumerate(ref_ph):
 
-        # --- CASE 1: user didn't speak enough words
         if i >= len(user_ph):
-            results[ref_w] = "NOT SPOKEN"
+            results[ref_word] = "NOT SPOKEN"
             continue
 
-        user_w, user_p = user_ph[i]
+        user_word, user_phones = user_ph[i]
 
-        # --- CASE 2: word mismatch → morphological / wrong form / substitution
-        if user_w != ref_w:
-            results[ref_w] = "MISPRONOUNCED"
+        if user_word != ref_word:
+            results[ref_word] = "MISPRONOUNCED"
             continue
 
-        # --- CASE 3: phoneme comparison
-        if not ref_p or not user_p:
-            results[ref_w] = "MISPRONOUNCED"
+        if not ref_phones or not user_phones:
+            results[ref_word] = "MISPRONOUNCED"
             continue
 
-        d = distance(' '.join(ref_p), ' '.join(user_p))
+        d = distance(" ".join(ref_phones), " ".join(user_phones))
 
         if d == 0:
-            results[ref_w] = "CORRECT"
+            results[ref_word] = "CORRECT"
         else:
-            results[ref_w] = "MISPRONOUNCED"
+            results[ref_word] = "MISPRONOUNCED"
 
     return results
