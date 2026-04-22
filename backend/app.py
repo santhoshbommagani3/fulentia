@@ -1,3 +1,7 @@
+import nltk
+nltk.download('cmudict', quiet=True)
+nltk.download('punkt', quiet=True)
+
 from flask import Flask, request, jsonify, render_template
 from flask_cors import CORS
 import json
